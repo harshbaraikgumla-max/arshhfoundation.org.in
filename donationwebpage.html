@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donation Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+/* DONATION HERO */
+
+.donation-banner{
+    width:100%;
+    height:400px;
+    background:#ddd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#555;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* MAIN SECTION */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#2c3e50;
+}
+
+/* FLEX BOX */
+
+.donation-box{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* LEFT SIDE */
+
+.left-box{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.left-box h3{
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+.left-box p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* RIGHT SIDE */
+
+.right-box{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BANK DETAILS */
+
+.bank-detail{
+    margin-bottom:25px;
+}
+
+.bank-detail label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:8px;
+    color:#2c3e50;
+}
+
+.bank-detail div{
+    border:1px solid #ccc;
+    padding:15px;
+    border-radius:5px;
+    background:#fafafa;
+    min-height:50px;
+}
+
+/* QR / IMAGE */
+
+.qr-box{
+    margin-top:30px;
+    text-align:center;
+}
+
+.qr-box img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border:2px dashed #ccc;
+}
+
+.qr-box p{
+    margin-top:15px;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.donation-box{
+    flex-direction:column;
+}
+
+header h1{
+    font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <h1>Donate & Support</h1>
+</header>
+
+<!-- DONATION IMAGE SPACE -->
+
+<div class="donation-banner">
+    Donation Banner Image Here
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Your Support Can Change Lives</h2>
+</div>
+
+<div class="donation-box">
+
+<!-- LEFT -->
+
+<div class="left-box">
+
+<h3>Why Donate?</h3>
+
+<p>
+Your donation helps poor children receive education, food,
+medical care and shelter. Every contribution makes a real difference
+in someone's life.
+</p>
+
+<br>
+
+<p>
+Together we can build a brighter future for needy communities.
+Thank you for supporting our mission.
+</p>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right-box">
+
+<h3 style="margin-bottom:30px; color:#2c3e50;">
+Bank Details
+</h3>
+
+<div class="bank-detail">
+<label>BANK NAME</label>
+<div></div>
+</div>
+
+<div class="bank-detail">
+<label>IFSC CODE</label>
+<div></div>
+</div>
+
+<div class="bank-detail">
+<label>BANK HOLDER NAME</label>
+<div></div>
+</div>
+
+<!-- QR / IMAGE -->
+
+<div class="qr-box">
+
+<img src="C:\Users\loq\.vscode\IMG\WhatsApp Image 2026-05-10 at 10.50.01 PM.jpeg" alt="QR Code / Donation Image">
+
+<p>
+Add QR Code or Donation Image Here
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 Charity NGO | Donation Page
+</footer>
+
+</body>
+</html>

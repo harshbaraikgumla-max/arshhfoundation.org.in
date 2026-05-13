@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGO Events Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#e74c3c;
+}
+
+/* HERO */
+
+.hero{
+    height:350px;
+    background:url('gallery-banner.jpg') center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    color:#2c3e50;
+}
+
+.card-content p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    background:#e74c3c;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#c0392b;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">Charity NGO</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="donation.html">Donation</a>
+<a href="events.html">Events</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>Our Events Gallery</h1>
+
+<p>Explore Our NGO Activities</p>
+
+</div>
+
+</div>
+
+<!-- GALLERY -->
+
+<div class="container">
+
+<div class="gallery">
+
+<!-- CARD 1 -->
+
+<div class="card">
+<img src="event1.jpg">
+<div class="card-content">
+<h3>Food Distribution</h3>
+<p>Helping poor families with food and ration kits.</p>
+<a href="event1-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+<img src="event2.jpg">
+<div class="card-content">
+<h3>Education Support</h3>
+<p>Providing books and education support to children.</p>
+<a href="event2-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+<img src="event3.jpg">
+<div class="card-content">
+<h3>Medical Camp</h3>
+<p>Free medical checkups and healthcare awareness.</p>
+<a href="event3-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 4 -->
+
+<div class="card">
+<img src="event4.jpg">
+<div class="card-content">
+<h3>Women Empowerment</h3>
+<p>Supporting women through awareness and training.</p>
+<a href="event4-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 5 -->
+
+<div class="card">
+<img src="event5.jpg">
+<div class="card-content">
+<h3>Clothes Donation</h3>
+<p>Distributing clothes to needy communities.</p>
+<a href="event5-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 6 -->
+
+<div class="card">
+<img src="event6.jpg">
+<div class="card-content">
+<h3>Tree Plantation</h3>
+<p>Environmental awareness and plantation drive.</p>
+<a href="event6-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 7 -->
+
+<div class="card">
+<img src="event7.jpg">
+<div class="card-content">
+<h3>Blood Donation</h3>
+<p>Organizing blood donation camps for hospitals.</p>
+<a href="event7-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 8 -->
+
+<div class="card">
+<img src="event8.jpg">
+<div class="card-content">
+<h3>Child Welfare</h3>
+<p>Helping children with care and educational support.</p>
+<a href="event8-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 9 -->
+
+<div class="card">
+<img src="event9.jpg">
+<div class="card-content">
+<h3>Village Support</h3>
+<p>Community development and village support programs.</p>
+<a href="event9-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+<!-- CARD 10 -->
+
+<div class="card">
+<img src="event10.jpg">
+<div class="card-content">
+<h3>Volunteer Program</h3>
+<p>Our volunteers helping communities in need.</p>
+<a href="event10-details.html" class="btn">View Details</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Charity NGO | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
